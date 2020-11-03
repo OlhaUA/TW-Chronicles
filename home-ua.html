@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="ua">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Двоколісні хроніки - проект двох українських музикантів та збирачів фольклору Володимира Муляра та Ярини Квітки. Вони мандрують світом велосипедами з їхнім малюком Марком."
+    />
+    <meta
+      name="keywords"
+      content="мандри,світ,веломандри,малюк,україна,двоколісні"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.12.1/css/all.css"
+      integrity="sha384-v8BU367qNbs/aIZIxuivaU55N5GPF89WBerHoGA4QTcbUjYiLQtKdrfXnqAcXyTv"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      media="screen and (max-width: 768px)"
+      href="css/mobile.css"
+    />
+    <link
+      rel="stylesheet"
+      media="screen and (min-width: 1100px)"
+      href="css/widescreen.css"
+    />
+    <title>Двоколісні хроніки | Мандри & Велоподорожі з малюком</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      // Hamburger Menu
+      $(function () {
+        $('.toggle').on('click', function () {
+          if ($('.item').hasClass('active')) {
+            $('.item').removeClass('active');
+          } else {
+            $('.item').addClass('active');
+          }
+        });
+      });
+
+      // Smooth scrolling
+      $(document).ready(function () {
+        $('a[href^="#"]').click(function () {
+          const target = $(this.hash);
+          if (target.length == 0)
+            target = $('a[name="' + this.hash.substr(1) + '"]');
+          if (target.length == 0) target = $('html');
+          $('html, body').animate(
+            { scrollTop: target.offset().top - 251 },
+            300
+          );
+          return false;
+        });
+      });
+    </script>
+  </head>
+
+  <body id="home">
+    <!-- Navbar -->
+    <nav id="navbar">
+      <ul class="menu">
+        <li class="logo">
+          <a href="#home"
+            ><span class="text-primary">
+              <i class="fas fa-bicycle"></i> Двоколісні
+            </span>
+            хроніки</a
+          >
+        </li>
+        <li class="item out-ham">
+          <a href="#home">Додому</a>
+        </li>
+        <li class="item"><a href="#what">Що робимо</a></li>
+        <li class="item"><a href="#who">Хто ми є</a></li>
+        <li class="item"><a href="#video">Нові відео</a></li>
+        <li class="item"><a href="#contact">Сконтактувати</a></li>
+        <li class="item out-ham"><a href="./index.html">EN</a></li>
+        <li class="toggle"><span class="bars"></span></li>
+      </ul>
+    </nav>
+    <!-- Header: Showcase -->
+    <header id="showcase">
+      <div class="showcase-content">
+        <h1 class="l-heading">Відкривайте цей прекрасний світ!</h1>
+        <p class="lead">Навколо світу на велосипеді з малюком.</p>
+        <a href="#what" class="btn">Читати більше</a>
+      </div>
+    </header>
+
+    <!-- Section: What We Do -->
+    <section id="what" class="bg-light py-2">
+      <div class="container">
+        <h2 class="m-heading text-center">
+          <span class="text-primary">Що</span> ми робимо
+        </h2>
+        <div class="items">
+          <div class="item">
+            <i class="fas fa-route fa-2x"></i>
+            <div>
+              <h3>Мандри & Музика</h3>
+              <p>
+                У жовтні 2014 ми почали навколосвітню подорож у рамках проєкту
+                "Двоколісні хроніки". Мандруючи ми записуємо фольклорну музику
+                від людей з усього світу, граємо її з місцевими музикантами,
+                розповідаємо людям про Україну та співаємо їм наших пісень.
+              </p>
+            </div>
+          </div>
+          <div class="item">
+            <i class="fab fa-youtube fa-2x"></i>
+            <div>
+              <h3>Відеовлог на YouTube</h3>
+              <p>
+                Ми раді ділитися з людьми тим, що відкриваємо самі: дивовижні
+                культури, незвичні місця, музику різних народів, історії людей,
+                яких зустрічаємо на шляху. Всі ці явища й події надихають нас на
+                творчість, якою ми також ділимось зі сцени в багатьох країнах
+                світу з нашим гуртом Folknery.
+              </p>
+            </div>
+          </div>
+          <div class="item">
+            <i class="far fa-comment-dots fa-2x"></i>
+            <div>
+              <h3>Тревел-лекції</h3>
+              <p>
+                Під час зустрічей слухачі дізнаються: як самостійно цікаво та
+                бюджетно мандрувати; як мандрувати з дитиною; як робити візи,
+                прокладати маршрут, працювати в дорозі; як втілювати мрії в
+                життя; чому мандри – це неймовірні історії, пригоди, знайомства,
+                які потрібні кожному.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section: Who We Are -->
+    <section id="who">
+      <div class="who-img"></div>
+      <div class="who-text bg-dark p-2">
+        <h2 class="m-heading"><span class="text-primary">Хто</span> ми є</h2>
+        <p>
+          Ми сім’я мандрівників, музикантів і творчих людей з України. Двоє
+          старших, Володимир та Ярина, стали мандрівниками десяток років тому,
+          коли захотіли пізнати світ таким, яким він є, відкрити його власними
+          силами і побачити власними очима. Тоді ми створили
+          культурно-мандрівницький проєкт «Двоколісні хроніки», аби ділитися
+          нашими дослідженнями світу з іншими людьми.
+          <br />
+          <br />
+          Третій, малюк Марко, став мандрівником від народження. Власне, в
+          дорозі він і народився й у свої два роки вже встиг відкрити 8 країн
+          світу.
+          <br />
+          <br />
+          Починаючи з 2010 року, ми побували в 32 країнах і проїхали понад
+          45,000 км.
+        </p>
+        <br />
+        <h2>Наша команда</h2>
+        <ul class="list">
+          <li>
+            <span class="text-primary">Володимир Муляр:</span> засновник
+            проєкту, мандрівник, музикант, звукорежисер, відеоредактор
+          </li>
+          <li>
+            <span class="text-primary">Ярина Квітка:</span> мандрівниця,
+            співачка, актриса, журналістка
+          </li>
+          <li>
+            <span class="text-primary">Марко Муляр:</span> наймолодший у світі
+            мандрівник. Капітан команди
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Section: Latest Video -->
+    <section id="video" class="bg-light py-2">
+      <h2 class="m-heading text-center">
+        Нові <span class="text-primary">відео</span>
+      </h2>
+      <div class="videos">
+        <div class="video-travel">
+          <iframe
+            class="latestVideoEmbed"
+            vnum="0"
+            cid="UCIHkmNkkqHkqbKwcZbjIF0Q"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+        </div>
+
+        <div class="video-music">
+          <iframe
+            class="latestVideoEmbed"
+            vnum="1"
+            cid="UCfd9aaL1dcYlvw_lteDofeA"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section: Support -->
+    <section id="clients" class="py-1">
+      <div class="container">
+        <h2 class="m-heading text-center">
+          За <span class="text-primary">підтримки</span>
+        </h2>
+        <div class="items py-1">
+          <div><img src="./img/logos/logo1.png" alt="TREK Distributor" /></div>
+          <div><img src="./img/logos/logo2.png" alt="Flower's way" /></div>
+          <div><img src="./img/logos/logo3.png" alt="Terra Incognita" /></div>
+          <div><img src="./img/logos/logo4.png" alt="Turbat" /></div>
+          <div><img src="./img/logos/logo5.png" alt="Gorgany" /></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section: Contact -->
+    <section id="contact">
+      <div class="contact-form bg-primary p-2">
+        <h2 class="m-heading">Сконтактувати</h2>
+        <form action="process.php" method="POST">
+          <div class="form-group">
+            <label for="name">Ім'я</label>
+            <input type="text" name="name" id="name" />
+          </div>
+          <div class="form-group">
+            <label for="email">Електронна адреса</label>
+            <input type="email" name="email" id="email" />
+          </div>
+          <div class="form-group">
+            <label for="phone">Номер телефону</label>
+            <input type="tel" name="phone" id="phone" />
+          </div>
+          <div class="form-group">
+            <label for="message">Повідомлення</label>
+            <textarea name="message" id="message"></textarea>
+          </div>
+          <input type="submit" value="Надіслати" class="btn btn-dark" />
+        </form>
+      </div>
+      <div class="map"></div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="main-footer" class="bg-dark text-center py-1">
+      <div class="copyright">&copy; Двоколісні хроніки, 2020</div>
+      <div>
+        <a
+          class="youtube"
+          href="https://www.youtube.com/channel/UCIHkmNkkqHkqbKwcZbjIF0Q"
+          target="_blank"
+          title="Ми на YouTube"
+          ><i class="fab fa-youtube fa-2x"></i
+        ></a>
+        <a
+          class="facebook"
+          href="https://www.facebook.com/twowheeledchronicles/"
+          target="_blank"
+          title="Ми на Facebook"
+          ><i class="fab fa-facebook-square fa-2x"></i
+        ></a>
+        <a
+          class="instagram"
+          href="https://www.instagram.com/two_wheeled_chronicles/"
+          target="_blank"
+          title="Ми на Instagram"
+          ><i class="fab fa-instagram fa-2x"></i
+        ></a>
+        <a
+          class="youtube"
+          href="https://www.youtube.com/user/Folknery"
+          target="_blank"
+          title="Наш гурт Фолькнери"
+          ><i class="fab fa-youtube-square fa-2x"></i
+        ></a>
+      </div>
+    </footer>
+
+    <!-- Google Maps -->
+    <script src="js/map.js"></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAcMtf-UEMPZJBEI_iqy84UY0871ux05so&callback=initMap"
+      async
+      defer
+    ></script>
+
+    <!-- Latest Video -->
+    <script src="js/video.js"></script>
+  </body>
+</html>

@@ -1,0 +1,157 @@
+/* Mobile Menu */
+
+#navbar .menu {
+  justify-content: space-between;
+}
+
+#navbar .toggle {
+  order: 1;
+  margin: 0 0.5rem;
+}
+
+#navbar .item.out-ham {
+  width: 100%;
+  text-align: center;
+  order: 2;
+  display: none;
+}
+
+#what .items {
+  display: block;
+  padding: 1rem;
+}
+
+/* Align icon to left*/
+#what .items .item {
+  display: flex;
+  text-align: left;
+}
+
+/* Position icon */
+#what .items .item i {
+  margin-right: 1.3rem;
+  align-self: center;
+  margin-bottom: 0;
+}
+
+/* Position photo */
+#who .who-img {
+  background: url('../img/people2.jpg') no-repeat right center/cover;
+}
+
+#video .videos {
+  flex-direction: column;
+}
+
+/* Smartphones */
+@media (max-width: 600px) {
+  #who .who-img {
+    display: none;
+  }
+}
+
+@media (max-width: 500px) {
+  #navbar .logo {
+    text-align: center;
+  }
+
+  #navbar ul {
+    padding: 0.5rem;
+  }
+
+  #showcase .showcase-content {
+    top: 0;
+  }
+
+  #who {
+    display: block;
+  }
+
+  #clients .items img {
+    width: 80%;
+  }
+
+  #clients .items div:last-child {
+    display: none;
+  }
+
+  #contact {
+    flex-direction: column;
+  }
+
+  #contact .map {
+    height: 200px;
+    border-top: 4px solid #333;
+  }
+}
+
+@media (max-height: 812px) {
+  .l-heading {
+    font-size: 3rem;
+  }
+}
+
+@media (max-height: 568px) {
+  .l-heading {
+    font-size: 2.7rem;
+  }
+
+  .lead {
+    font-size: 1rem;
+  }
+}
+
+@media (max-height: 480px) {
+  .l-heading {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 420px) {
+  #main-footer {
+    flex-direction: column-reverse;
+  }
+
+  #main-footer .social {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 0.5rem;
+  }
+
+  #main-footer .copyright {
+    margin-left: 2rem;
+    line-height: 1.5;
+  }
+}
+
+@media (max-width: 375px) {
+  #navbar ul li a {
+    font-size: 0.9rem;
+  }
+
+  #what .items {
+    padding: 0.5rem;
+  }
+
+  #what .items .item {
+    flex-direction: column;
+    padding: 0.3rem;
+  }
+
+  #what .items .item i {
+    padding: 0.5rem;
+    margin-bottom: 0.7rem;
+  }
+}
+
+@media (max-width: 360px) {
+  #navbar ul li a {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 320px) {
+  #navbar ul li a {
+    font-size: 0.7rem;
+  }
+}

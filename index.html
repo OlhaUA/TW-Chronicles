@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Two-wheeled Chronicles is a project by two Ukrainian musicians and folklore collectors Volodymyr Mulyar and Yaryna Kvitka. They travel the world by bicycles with their baby Marko."
+    />
+    <meta
+      name="keywords"
+      content="travel,world,bicycling,baby,ukraine,two-wheeled"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.12.1/css/all.css"
+      integrity="sha384-v8BU367qNbs/aIZIxuivaU55N5GPF89WBerHoGA4QTcbUjYiLQtKdrfXnqAcXyTv"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      media="screen and (max-width: 767px)"
+      href="css/mobile.css"
+    />
+    <link
+      rel="stylesheet"
+      media="screen and (min-width: 1100px)"
+      href="css/widescreen.css"
+    />
+    <title>Two-wheeled Chronicles | Travel & Bicycling with baby</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      // Hamburger Menu
+      $(function () {
+        $('.toggle').on('click', function () {
+          if ($('.item').hasClass('active')) {
+            $('.item').removeClass('active');
+          } else {
+            $('.item').addClass('active');
+          }
+        });
+      });
+    </script>
+  </head>
+
+  <body id="home">
+    <!-- Navbar -->
+    <nav id="navbar">
+      <ul class="menu">
+        <li class="logo">
+          <a href="#home"
+            ><span class="text-primary">
+              <i class="fas fa-bicycle"></i> Two-wheeled
+            </span>
+            Chronicles</a
+          >
+        </li>
+        <li class="item out-ham"><a href="#home">Home</a></li>
+        <li class="item"><a href="#what">What</a></li>
+        <li class="item"><a href="#who">Who</a></li>
+        <li class="item"><a href="#video">Latest Videos</a></li>
+        <li class="item"><a href="#contact">Contact</a></li>
+        <li class="item out-ham"><a href="./home-ua.html">UKR</a></li>
+        <li class="toggle"><span class="bars"></span></li>
+      </ul>
+    </nav>
+    <!-- Header: Showcase -->
+    <header id="showcase">
+      <div class="showcase-content">
+        <h1 class="l-heading">Discover this beautiful world!</h1>
+        <p class="lead">Bicycling around the world with baby.</p>
+        <a href="#what" class="btn">Read More</a>
+      </div>
+    </header>
+
+    <!-- Section: What We Do -->
+    <section id="what" class="bg-light py-2">
+      <div class="container">
+        <h2 class="m-heading text-center">
+          <span class="text-primary">What</span> We Do
+        </h2>
+        <div class="items">
+          <div class="item">
+            <i class="fas fa-route fa-2x"></i>
+            <div>
+              <h3>Travel & Music</h3>
+              <p>
+                In October 2014, we set off on a cycling trip around the world
+                within the “Two-wheeled Chronicles” project. As we travel we
+                record folk music from the peoples of the world, play it with
+                the local musicians, tell people about Ukraine and sing our
+                songs to them.
+              </p>
+            </div>
+          </div>
+          <div class="item">
+            <i class="fab fa-youtube fa-2x"></i>
+            <div>
+              <h3>A Videovlog On YouTube</h3>
+              <p>
+                It makes us happy to share our discoveries: wonderful cultures,
+                unusual places, international music, and stories of the people
+                we meet along the way. Also we create music that we play on
+                stages of many countries with our band Folknery.
+              </p>
+            </div>
+          </div>
+          <div class="item">
+            <i class="far fa-comment-dots fa-2x"></i>
+            <div>
+              <h3>Travel Lectures</h3>
+              <p>
+                During our meetings the listeners learn: how to travel
+                independently and budget; how to travel with baby; how to make
+                visas, get directions, work on the go; how to make dreams come
+                true; why travel is the incredible stories, adventures, dating
+                that everyone needs.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section: Who We Are -->
+    <section id="who">
+      <div class="who-img"></div>
+      <div class="who-text bg-dark p-2">
+        <h2 class="m-heading"><span class="text-primary">Who</span> We Are</h2>
+        <p>
+          We are a family of three from Ukraine; we are travelers, musicians,
+          and artists. We started traveling 10 years ago, wanting to discover
+          the real world on our own and see everything for ourselves first-hand.
+          We also wanted to share our discoveries, so we created a project
+          called “Two-wheeled Chronicles” that combines culture and travel.
+          <br />
+          <br />
+          Our baby boy Marko was born during our journey; by the age of 2, he
+          had explored more than 8 different countries.
+          <br />
+          <br />
+          Since 2010 we’ve covered 32 countries and more than 45,000 km.
+        </p>
+        <br />
+        <h2>Our Team</h2>
+        <ul class="list">
+          <li>
+            <span class="text-primary">Volodymyr Muliar:</span> founder of the
+            project, traveller, musician, audio engineer, video maker
+          </li>
+          <li>
+            <span class="text-primary">Yaryna Kvitka:</span> traveller, singer,
+            actress, journalist
+          </li>
+          <li>
+            <span class="text-primary">Marko Muliar:</span> the youngest
+            traveller in the world. Captain of the team
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Section: Latest Video -->
+    <section id="video" class="bg-light py-2">
+      <h2 class="m-heading text-center">
+        Latest <span class="text-primary">Videos</span>
+      </h2>
+      <div class="videos">
+        <div class="video-travel">
+          <iframe
+            class="latestVideoEmbed"
+            vnum="0"
+            cid="UCcZGtSyN83fHx7MJ1mlQ8EQ"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+        </div>
+
+        <div class="video-music">
+          <iframe
+            class="latestVideoEmbed"
+            vnum="1"
+            cid="UCfd9aaL1dcYlvw_lteDofeA"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section: Support -->
+    <section id="clients" class="bg-light py-1">
+      <div class="container">
+        <h2 class="m-heading text-center">
+          With the <span class="text-primary">support</span> from
+        </h2>
+        <div class="items py-1">
+          <div><img src="./img/logos/logo1.png" alt="TREK Distributor" /></div>
+          <div><img src="./img/logos/logo2.png" alt="Flower's way" /></div>
+          <div><img src="./img/logos/logo3.png" alt="Terra Incognita" /></div>
+          <div><img src="./img/logos/logo4.png" alt="Turbat" /></div>
+          <div><img src="./img/logos/logo5.png" alt="Gorgany" /></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section: Contact -->
+    <section id="contact">
+      <div class="contact-form bg-primary p-2">
+        <h2 class="m-heading">Contact Us</h2>
+        <form name="contact" method="POST" data-netlify="true">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" />
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" name="phone" id="phone" />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea rows="3" name="message" id="message"></textarea>
+          </div>
+          <div class="form-group">
+            <input type="file" name="myfile" id="myfile" />
+          </div>
+          <div class="form-group">
+            <div data-netlify-recaptcha="true"></div>
+          </div>
+          <input type="submit" value="Send" class="btn btn-dark" />
+        </form>
+      </div>
+      <div class="map"></div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="main-footer" class="bg-dark text-center py-1">
+      <div class="copyright">
+        Copyright &copy; 2020, Two-wheeled Chronicles, All Rights Reserved
+      </div>
+      <div class="social">
+        <div>
+          <a
+            class="youtube"
+            href="https://www.youtube.com/channel/UCcZGtSyN83fHx7MJ1mlQ8EQ"
+            target="_blank"
+            title="We on YouTube"
+            ><i class="fab fa-youtube fa-2x"></i
+          ></a>
+        </div>
+        <div>
+          <a
+            href="https://www.facebook.com/twowheeledchronicles/"
+            target="_blank"
+            title="We on Facebook"
+            ><i class="fab fa-facebook-square fa-2x"></i
+          ></a>
+        </div>
+        <div>
+          <a
+            class="instagram"
+            href="https://www.instagram.com/two_wheeled_chronicles/"
+            target="_blank"
+            title="We on Instagram"
+            ><i class="fab fa-instagram fa-2x"></i
+          ></a>
+        </div>
+        <div>
+          <a
+            class="youtube"
+            href="https://www.youtube.com/user/Folknery"
+            target="_blank"
+            title="Our band Folknery"
+            ><i class="fab fa-youtube-square fa-2x"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- jQuery CDN -->
+    <!-- <script
+      src="//code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script> -->
+
+    <!-- Latest Video -->
+    <script src="js/video.js"></script>
+
+    <!-- Google Maps -->
+    <script src="js/map.js"></script>
+    <script
+      defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDIrPWL7hHhpC6o59ELI-fcBFs_oZbQg5s&callback=initMap"
+    ></script>
+  </body>
+</html>
