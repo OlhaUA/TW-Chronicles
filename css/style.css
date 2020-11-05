@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
+:root {
+  --txt-color: #ee7a05;
+  --bg-color: #b3dd9e;
+  --success-color: #2ecc71;
+  --error-color: #e74c3c;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -32,7 +39,7 @@ p {
 }
 
 .text-primary {
-  color: #ee7a05;
+  color: var(--txt-color);
 }
 
 .bg-light {
@@ -46,7 +53,7 @@ p {
 }
 
 .bg-primary {
-  background: #b3dd9e;
+  background: var(--bg-color);
   color: #fff;
 }
 
@@ -90,7 +97,7 @@ p {
 .btn {
   display: inline-block;
   color: #fff;
-  background: #b3dd9e;
+  background: var(--bg-color);
   padding: 0.5rem 2rem;
   border: none;
   border-radius: 5px;
@@ -101,7 +108,7 @@ p {
 }
 
 .btn-dark {
-  background: #ee7a05;
+  background: var(--txt-color);
   color: #fff;
 }
 
@@ -123,7 +130,7 @@ p {
 #navbar {
   position: sticky;
   top: 0;
-  background: #b3dd9e;
+  background: var(--bg-color);
   /* #b3dd9e */
   /* #74cbf3; */
   color: #fff;
@@ -164,21 +171,18 @@ p {
 }
 
 #navbar .menu li:not(.logo) a:hover {
-  background: #ee7a05;
+  background: var(--txt-color);
   border-radius: 5px;
 }
 
 #navbar .toggle {
-  cursor: pointer;
-  order: 2;
-  margin: 0 1.5rem;
-  align-self: center;
+  display: none;
 }
 
 #navbar .item.out-ham {
   width: auto;
   order: 1;
-  display: block;
+  display: inline;
 }
 
 #navbar .item.out-ham a {
@@ -198,7 +202,7 @@ p {
 }
 
 #navbar .bars {
-  background: #ee7a05;
+  background: var(--txt-color);
   display: inline-block;
   height: 2px;
   position: relative;
@@ -206,7 +210,7 @@ p {
 }
 #navbar .bars::before,
 #navbar .bars::after {
-  background: #ee7a05;
+  background: var(--txt-color);
   content: '';
   display: inline-block;
   height: 2px;
@@ -261,7 +265,7 @@ p {
 }
 
 #what .items .item i {
-  background: #b3dd9e;
+  background: var(--bg-color);
   padding: 1rem;
   border-radius: 50%;
   margin-bottom: 1rem;
@@ -282,7 +286,7 @@ p {
 }
 
 #who .list span:hover {
-  color: #b3dd9e;
+  color: var(--bg-color);
 }
 
 #who .who-img {
@@ -340,6 +344,17 @@ iframe {
 #contact .contact-form textarea {
   width: 100%;
   padding: 0.5rem;
+}
+
+#contact .contact-form #error {
+  color: var(--error-color);
+}
+
+.success-submission {
+  color: var(--success-color);
+}
+.error-submission {
+  color: var(--error-color);
 }
 
 /* Footer */

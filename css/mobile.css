@@ -5,8 +5,11 @@
 }
 
 #navbar .toggle {
+  display: inline;
+  cursor: pointer;
   order: 1;
   margin: 0 0.5rem;
+  align-self: center;
 }
 
 #navbar .item.out-ham {
@@ -36,7 +39,7 @@
 
 /* Position photo */
 #who .who-img {
-  background: url('../img/people2.jpg') no-repeat right center/cover;
+  background: url('../img/people2.jpg') no-repeat left center/cover;
 }
 
 #video .videos {

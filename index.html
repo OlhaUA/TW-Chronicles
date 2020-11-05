@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="css/style.css" />
     <link
       rel="stylesheet"
-      media="screen and (max-width: 767px)"
+      media="screen and (max-width: 768px)"
       href="css/mobile.css"
     />
     <link
@@ -42,6 +42,7 @@
         });
       });
     </script>
+    <script defer src="js/form.js"></script>
   </head>
 
   <body id="home">
@@ -57,10 +58,10 @@
           >
         </li>
         <li class="item out-ham"><a href="#home">Home</a></li>
-        <li class="item"><a href="#what">What</a></li>
-        <li class="item"><a href="#who">Who</a></li>
-        <li class="item"><a href="#video">Latest Videos</a></li>
-        <li class="item"><a href="#contact">Contact</a></li>
+        <li class="item out-ham"><a href="#what">What</a></li>
+        <li class="item out-ham"><a href="#who">Who</a></li>
+        <li class="item out-ham"><a href="#video">Videos</a></li>
+        <li class="item out-ham"><a href="#contact">Contact</a></li>
         <li class="item out-ham"><a href="./home-ua.html">UKR</a></li>
         <li class="toggle"><span class="bars"></span></li>
       </ul>
@@ -69,7 +70,7 @@
     <header id="showcase">
       <div class="showcase-content">
         <h1 class="l-heading">Discover this beautiful world!</h1>
-        <p class="lead">Bicycling around the world with baby.</p>
+        <p class="lead">Bicycling around the world with baby</p>
         <a href="#what" class="btn">Read More</a>
       </div>
     </header>
@@ -140,7 +141,7 @@
           had explored more than 8 different countries.
           <br />
           <br />
-          Since 2010 we’ve covered 32 countries and more than 45,000 km.
+          Since 2010 we’ve covered 35 countries and 50,000 km.
         </p>
         <br />
         <h2>Our Team</h2>
@@ -193,7 +194,7 @@
     <section id="clients" class="bg-light py-1">
       <div class="container">
         <h2 class="m-heading text-center">
-          With the <span class="text-primary">support</span> from
+          <span class="text-primary">Supported</span> by
         </h2>
         <div class="items py-1">
           <div><img src="./img/logos/logo1.png" alt="TREK Distributor" /></div>
@@ -209,7 +210,8 @@
     <section id="contact">
       <div class="contact-form bg-primary p-2">
         <h2 class="m-heading">Contact Us</h2>
-        <form name="contact" method="POST" data-netlify="true">
+        <div id="error"></div>
+        <form name="contact" id="form" method="POST" data-netlify="true">
           <div class="form-group">
             <label for="name">Name</label>
             <input type="text" name="name" id="name" />
@@ -229,9 +231,9 @@
           <div class="form-group">
             <input type="file" name="myfile" id="myfile" />
           </div>
-          <div class="form-group">
+          <!-- <div class="form-group">
             <div data-netlify-recaptcha="true"></div>
-          </div>
+          </div> -->
           <input type="submit" value="Send" class="btn btn-dark" />
         </form>
       </div>
