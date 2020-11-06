@@ -12,7 +12,7 @@
   align-self: center;
 }
 
-#navbar .item.out-ham {
+#navbar .item {
   width: 100%;
   text-align: center;
   order: 2;
@@ -128,10 +128,6 @@
 }
 
 @media (max-width: 375px) {
-  #navbar ul li a {
-    font-size: 0.9rem;
-  }
-
   #what .items {
     padding: 0.5rem;
   }
@@ -144,17 +140,5 @@
   #what .items .item i {
     padding: 0.5rem;
     margin-bottom: 0.7rem;
-  }
-}
-
-@media (max-width: 360px) {
-  #navbar ul li a {
-    font-size: 0.85rem;
-  }
-}
-
-@media (max-width: 320px) {
-  #navbar ul li a {
-    font-size: 0.7rem;
   }
 }

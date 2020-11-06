@@ -58,9 +58,9 @@
           >
         </li>
         <li class="item out-ham"><a href="#home">Home</a></li>
-        <li class="item out-ham"><a href="#what">What</a></li>
-        <li class="item out-ham"><a href="#who">Who</a></li>
-        <li class="item out-ham"><a href="#video">Videos</a></li>
+        <li class="item"><a href="#what">What</a></li>
+        <li class="item"><a href="#who">Who</a></li>
+        <li class="item"><a href="#video">Videos</a></li>
         <li class="item out-ham"><a href="#contact">Contact</a></li>
         <li class="item out-ham"><a href="./home-ua.html">UKR</a></li>
         <li class="toggle"><span class="bars"></span></li>
@@ -211,7 +211,13 @@
       <div class="contact-form bg-primary p-2">
         <h2 class="m-heading">Contact Us</h2>
         <div id="error"></div>
-        <form name="contact" id="form" method="POST" data-netlify="true">
+        <form
+          name="contact"
+          id="form"
+          method="POST"
+          data-netlify="true"
+          data-netlify-recaptcha="true"
+        >
           <div class="form-group">
             <label for="name">Name</label>
             <input type="text" name="name" id="name" />
@@ -231,9 +237,9 @@
           <div class="form-group">
             <input type="file" name="myfile" id="myfile" />
           </div>
-          <!-- <div class="form-group">
+          <div class="form-group">
             <div data-netlify-recaptcha="true"></div>
-          </div> -->
+          </div>
           <input type="submit" value="Send" class="btn btn-dark" />
         </form>
       </div>

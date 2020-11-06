@@ -29,7 +29,7 @@ $('#navbar a').on('click', function (event) {
 
     $('html, body').animate(
       {
-        scrollTop: $(hash).offset().top - 255,
+        scrollTop: $(hash).offset().top - 370,
       },
       800
     );
