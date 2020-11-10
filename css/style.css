@@ -396,8 +396,9 @@ textarea:focus {
 }
 
 /* ReCaptcha Iframe FIX */
-.form-group iframe {
-  width: auto;
+.captcha {
+  margin: 0 auto;
+  display: table;
 }
 
 .g-recaptcha > div {
