@@ -397,8 +397,7 @@ textarea:focus {
 
 /* ReCaptcha Iframe FIX */
 .captcha {
-  margin: 0 auto;
-  display: table;
+  width: 100%;
 }
 
 .g-recaptcha > div {
