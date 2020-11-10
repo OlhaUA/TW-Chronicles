@@ -148,8 +148,8 @@
   #rc-imageselect,
   .g-recaptcha {
     transform: scale(0.77);
-    -webkit-transform: scale(0.7);
-    transform-origin: 4% 0;
-    -webkit-transform-origin: 7% 0;
+    -webkit-transform: scale(0.77);
+    transform-origin: 0 0;
+    -webkit-transform-origin: 0 0;
   }
 }
