@@ -396,9 +396,6 @@ textarea:focus {
 }
 
 /* ReCaptcha Iframe FIX */
-.captcha {
-  width: 100%;
-}
 
 .g-recaptcha > div {
   overflow: hidden;
