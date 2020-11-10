@@ -396,6 +396,10 @@ textarea:focus {
 }
 
 /* ReCaptcha Iframe FIX */
+.form-group iframe {
+  width: auto;
+}
+
 .g-recaptcha > div {
   overflow: hidden;
 }

@@ -13,7 +13,7 @@ const processForm = (form) => {
     body: data,
   })
     .then(() => {
-      errorElem.innerText = 'Thank you! Your letter has been sent.';
+      errorElem.innerText = 'Thank you. Your letter has been sent.';
 
       setTimeout(function () {
         errorElem.innerText = '';
