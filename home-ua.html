@@ -145,8 +145,8 @@
           світу.
           <br />
           <br />
-          Починаючи з 2010 року, ми побували в 32 країнах і проїхали понад
-          45,000 км.
+          Починаючи з 2010 року ми побували в 35 країнах і проїхали понад 50,000
+          км.
         </p>
         <br />
         <h2>Наша команда</h2>
@@ -253,7 +253,9 @@
 
     <!-- Footer -->
     <footer id="main-footer" class="bg-dark text-center py-1">
-      <div class="copyright">&copy; Двоколісні хроніки, 2020</div>
+      <div class="copyright">
+        &copy; Двоколісні хроніки, <span id="copyright-year">2021</span>
+      </div>
       <div>
         <a
           class="youtube"
@@ -286,6 +288,9 @@
       </div>
     </footer>
 
+    <!-- Latest Video -->
+    <script src="js/video.js"></script>
+
     <!-- Google Maps -->
     <script src="js/map.js"></script>
     <script
@@ -294,7 +299,10 @@
       defer
     ></script>
 
-    <!-- Latest Video -->
-    <script src="js/video.js"></script>
+    <script>
+      document.querySelector(
+        '#copyright-year'
+      ).innerText = new Date().getFullYear();
+    </script>
   </body>
 </html>
