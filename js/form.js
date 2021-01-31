@@ -1,5 +1,5 @@
 const contactForm = document.getElementById('form');
-const name = document.getElementById('name');
+const username = document.getElementById('username');
 const email = document.getElementById('email');
 const message = document.getElementById('message');
 const phone = document.getElementById('phone');
@@ -31,7 +31,7 @@ const processForm = (form) => {
 if (contactForm) {
   contactForm.addEventListener('submit', (e) => {
     let messages = [];
-    const nameVal = name.value.trim();
+    const nameVal = username.value.trim();
     if (nameVal === '' || nameVal === null || nameVal.length < 2) {
       messages.push('Name must be at least 2 characters');
     }
@@ -55,7 +55,7 @@ if (contactForm) {
       e.preventDefault();
       processForm(contactForm);
 
-      name.value = '';
+      username.value = '';
       email.value = '';
       message.value = '';
       if (phone.value !== '' || phone.value !== null) {

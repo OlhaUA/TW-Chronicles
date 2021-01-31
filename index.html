@@ -221,8 +221,8 @@
           data-netlify-recaptcha="true"
         >
           <div class="form-group">
-            <label for="name">Name</label>
-            <input type="text" name="name" id="name" />
+            <label for="username">Name</label>
+            <input type="text" name="username" id="username" />
           </div>
           <div class="form-group">
             <label for="email">Email</label>
@@ -251,7 +251,8 @@
     <!-- Footer -->
     <footer id="main-footer" class="bg-dark text-center py-1">
       <div class="copyright">
-        Copyright &copy; 2020, Two-wheeled Chronicles, All Rights Reserved
+        Copyright &copy; <span id="copyright-year">2021</span>, Two-wheeled
+        Chronicles, All Rights Reserved
       </div>
       <div class="social">
         <div>
@@ -299,7 +300,12 @@
     <script src="js/map.js"></script>
     <script
       defer
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDIrPWL7hHhpC6o59ELI-fcBFs_oZbQg5s&callback=initMap"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC1gOScmCbSKFr0k1KD5JRE3eSNX8mySJ0&callback=initMap"
     ></script>
+    <script>
+      document.querySelector(
+        '#copyright-year'
+      ).innerText = new Date().getFullYear();
+    </script>
   </body>
 </html>
